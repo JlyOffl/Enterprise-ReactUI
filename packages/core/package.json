@@ -1,0 +1,30 @@
+{
+  "name": "@erui/core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Platform-agnostic core: IoC, state, API, auth, feature flags, logging, instrumentation, health, lifecycle, theming, localization, validation, navigation, headless UI hooks and component factory.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "i18next": "^25.2.1",
+    "inversify": "^6.2.2",
+    "react-hook-form": "^7.57.0",
+    "react-i18next": "^15.5.3",
+    "react-redux": "^9.2.0",
+    "reflect-metadata": "^0.2.2",
+    "zod": "^3.25.67"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "typescript": "~5.8.3"
+  }
+}

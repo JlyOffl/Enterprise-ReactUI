@@ -1,0 +1,58 @@
+/** French. Keys not present fall back to English (fallbackLng). */
+export const fr = {
+  app: { name: 'Enterprise ReactUI', tagline: 'Un seul cœur. Toutes les plateformes.' },
+  common: {
+    save: 'Enregistrer', cancel: 'Annuler', close: 'Fermer', confirm: 'Confirmer', delete: 'Supprimer', edit: 'Modifier',
+    create: 'Créer', search: 'Rechercher', refresh: 'Actualiser', reset: 'Réinitialiser', submit: 'Envoyer', back: 'Retour',
+    next: 'Suivant', previous: 'Précédent', finish: 'Terminer', loading: 'Chargement…', noResults: 'Aucun résultat',
+    yes: 'Oui', no: 'Non', all: 'Tous', actions: 'Actions', status: 'Statut', details: 'Détails', apply: 'Appliquer',
+    clear: 'Effacer', retry: 'Réessayer', viewAll: 'Tout voir', open: 'Ouvrir', enabled: 'Activé', disabled: 'Désactivé',
+    online: 'En ligne', offline: 'Hors ligne', optional: 'Facultatif', required: 'Obligatoire',
+    selected: '{{count}} sélectionnés', rowsPerPage: 'Lignes par page', page: 'Page',
+    showing: '{{from}}–{{to}} sur {{total}}', comingSoon: 'Bientôt disponible',
+  },
+  nav: {
+    dashboard: 'Tableau de bord', controls: 'Contrôles', forms: 'Formulaires', dynamicForms: 'Formulaires dynamiques',
+    users: 'Utilisateurs', orders: 'Commandes', modals: 'Modales et fenêtres', featureFlags: 'Fonctionnalités',
+    observability: 'Observabilité', externalSystems: 'Systèmes externes', settings: 'Paramètres',
+    more: 'Plus', logout: 'Se déconnecter', menu: 'Menu',
+    sections: { main: 'Espace de travail', framework: 'Framework', admin: 'Administration' },
+  },
+  auth: {
+    title: 'Connexion', subtitle: 'Utilisez un compte de démonstration pour explorer les rôles.',
+    email: 'E-mail', password: 'Mot de passe', rememberMe: 'Rester connecté', signIn: 'Se connecter',
+    signingIn: 'Connexion…', demoAccounts: 'Comptes de démonstration', useAccount: 'Utiliser',
+    sessionExpired: 'Votre session a expiré. Veuillez vous reconnecter.',
+    accessDenied: 'Accès refusé', accessDeniedBody: "Vous n'avez pas l'autorisation de voir cette page.",
+    signedInAs: 'Connecté en tant que', role: 'Rôle',
+  },
+  validation: {
+    required: 'Ce champ est obligatoire', email: 'Saisissez un e-mail valide',
+    minLength: 'Au moins {{count}} caractères', maxLength: 'Au plus {{count}} caractères',
+    min: 'Doit être au moins {{min}}', max: 'Doit être au plus {{max}}',
+    passwordStrength: 'Utilisez majuscules, minuscules, un chiffre et un symbole',
+    passwordsMatch: 'Les mots de passe ne correspondent pas', pattern: 'Format invalide',
+    dateFuture: 'La date doit être future', dateAdult: 'Vous devez avoir 18 ans ou plus',
+    acceptTerms: 'Vous devez accepter les conditions', phone: 'Numéro invalide', url: 'URL invalide',
+    atLeastOneLine: 'Ajoutez au moins une ligne', integer: 'Doit être un nombre entier', selectAtLeast: 'Sélectionnez au moins {{count}}',
+  },
+  dashboard: {
+    title: 'Tableau de bord', welcome: 'Bon retour, {{name}}', revenue: "Chiffre d'affaires", orders: 'Commandes',
+    activeUsers: 'Utilisateurs actifs', conversion: 'Conversion', vsLastPeriod: 'vs période précédente',
+    revenueTrend: 'Tendance du CA', ordersByStatus: 'Commandes par statut', recentActivity: 'Activité récente',
+    quickActions: 'Actions rapides', newOrder: 'Nouvelle commande', inviteUser: 'Inviter', systemHealth: 'Santé du système',
+  },
+  settings: {
+    title: 'Paramètres', subtitle: 'Les préférences sont enregistrées sur cet appareil.', appearance: 'Apparence',
+    theme: 'Thème', light: 'Clair', dark: 'Sombre', system: 'Système', accent: "Couleur d'accent", language: 'Langue',
+    navigation: 'Navigation', navLayout: 'Style de navigation', navAuto: 'Automatique', navTabs: 'Onglets',
+    navHamburger: 'Menu hamburger', density: 'Densité', comfortable: 'Confortable', compact: 'Compacte',
+    resetPreferences: 'Réinitialiser les préférences', about: 'À propos', version: 'Version', environment: 'Environnement', platform: 'Plateforme',
+  },
+  health: { healthy: 'Sain', degraded: 'Dégradé', unhealthy: 'Défaillant', unknown: 'Inconnu' },
+  errors: {
+    generic: "Une erreur s'est produite", notFound: 'Page introuvable', notFoundBody: "La page demandée n'existe pas.",
+    boundaryTitle: 'Cette vue a planté', boundaryBody: "L'erreur a été enregistrée. Vous pouvez réessayer.",
+    tryAgain: 'Réessayer', offline: 'Vous êtes hors ligne. Certaines données peuvent être obsolètes.',
+  },
+};

@@ -1,0 +1,27 @@
+{
+  "name": "enterprise-reactui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise React + React Native reference application with a shared core (business logic, hooks, IoC, state, observability).",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "web": "npm run dev -w @erui/web",
+    "web:build": "npm run build -w @erui/web",
+    "web:preview": "npm run preview -w @erui/web",
+    "mobile": "npm run start -w @erui/mobile",
+    "mobile:android": "npm run android -w @erui/mobile",
+    "mobile:ios": "npm run ios -w @erui/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,css,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "typescript": "~5.8.3"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

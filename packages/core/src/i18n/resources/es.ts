@@ -1,0 +1,57 @@
+/** Spanish. Keys not present fall back to English (fallbackLng). */
+export const es = {
+  app: { name: 'Enterprise ReactUI', tagline: 'Un núcleo. Todas las plataformas.' },
+  common: {
+    save: 'Guardar', cancel: 'Cancelar', close: 'Cerrar', confirm: 'Confirmar', delete: 'Eliminar', edit: 'Editar',
+    create: 'Crear', search: 'Buscar', refresh: 'Actualizar', reset: 'Restablecer', submit: 'Enviar', back: 'Atrás',
+    next: 'Siguiente', previous: 'Anterior', finish: 'Finalizar', loading: 'Cargando…', noResults: 'Sin resultados',
+    yes: 'Sí', no: 'No', all: 'Todos', actions: 'Acciones', status: 'Estado', details: 'Detalles', apply: 'Aplicar',
+    clear: 'Limpiar', retry: 'Reintentar', viewAll: 'Ver todo', open: 'Abrir', enabled: 'Activado', disabled: 'Desactivado',
+    online: 'En línea', offline: 'Sin conexión', optional: 'Opcional', required: 'Obligatorio',
+    selected: '{{count}} seleccionados', rowsPerPage: 'Filas por página', page: 'Página',
+    showing: 'Mostrando {{from}}–{{to}} de {{total}}', comingSoon: 'Próximamente',
+  },
+  nav: {
+    dashboard: 'Panel', controls: 'Controles', forms: 'Formularios', dynamicForms: 'Formularios dinámicos',
+    users: 'Usuarios', orders: 'Pedidos', modals: 'Modales y ventanas', featureFlags: 'Funcionalidades',
+    observability: 'Observabilidad', externalSystems: 'Sistemas externos', settings: 'Configuración',
+    more: 'Más', logout: 'Cerrar sesión', menu: 'Menú',
+    sections: { main: 'Espacio de trabajo', framework: 'Framework', admin: 'Administración' },
+  },
+  auth: {
+    title: 'Iniciar sesión', subtitle: 'Use una cuenta de demostración para explorar el acceso por roles.',
+    email: 'Correo', password: 'Contraseña', rememberMe: 'Mantener sesión iniciada', signIn: 'Entrar',
+    signingIn: 'Entrando…', demoAccounts: 'Cuentas de demostración', useAccount: 'Usar',
+    sessionExpired: 'Su sesión expiró. Inicie sesión de nuevo.',
+    accessDenied: 'Acceso denegado', accessDeniedBody: 'No tiene permiso para ver esta página.',
+    signedInAs: 'Sesión de', role: 'Rol',
+  },
+  validation: {
+    required: 'Este campo es obligatorio', email: 'Introduzca un correo válido',
+    minLength: 'Debe tener al menos {{count}} caracteres', maxLength: 'Debe tener como máximo {{count}} caracteres',
+    min: 'Debe ser al menos {{min}}', max: 'Debe ser como máximo {{max}}',
+    passwordStrength: 'Use mayúsculas, minúsculas, un número y un símbolo', passwordsMatch: 'Las contraseñas no coinciden',
+    pattern: 'Formato no válido', dateFuture: 'La fecha debe ser futura', dateAdult: 'Debe ser mayor de 18 años',
+    acceptTerms: 'Debe aceptar los términos', phone: 'Introduzca un teléfono válido', url: 'Introduzca una URL válida',
+    atLeastOneLine: 'Añada al menos una línea', integer: 'Debe ser un número entero', selectAtLeast: 'Seleccione al menos {{count}}',
+  },
+  dashboard: {
+    title: 'Panel', welcome: 'Bienvenido de nuevo, {{name}}', revenue: 'Ingresos', orders: 'Pedidos',
+    activeUsers: 'Usuarios activos', conversion: 'Conversión', vsLastPeriod: 'vs periodo anterior',
+    revenueTrend: 'Tendencia de ingresos', ordersByStatus: 'Pedidos por estado', recentActivity: 'Actividad reciente',
+    quickActions: 'Acciones rápidas', newOrder: 'Nuevo pedido', inviteUser: 'Invitar usuario', systemHealth: 'Salud del sistema',
+  },
+  settings: {
+    title: 'Configuración', subtitle: 'Las preferencias se guardan en este dispositivo.', appearance: 'Apariencia',
+    theme: 'Tema', light: 'Claro', dark: 'Oscuro', system: 'Sistema', accent: 'Color de acento', language: 'Idioma',
+    navigation: 'Navegación', navLayout: 'Estilo de navegación', navAuto: 'Automático', navTabs: 'Pestañas',
+    navHamburger: 'Menú hamburguesa', density: 'Densidad', comfortable: 'Cómoda', compact: 'Compacta',
+    resetPreferences: 'Restablecer preferencias', about: 'Acerca de', version: 'Versión', environment: 'Entorno', platform: 'Plataforma',
+  },
+  health: { healthy: 'Saludable', degraded: 'Degradado', unhealthy: 'Fallando', unknown: 'Desconocido' },
+  errors: {
+    generic: 'Algo salió mal', notFound: 'Página no encontrada', notFoundBody: 'La página solicitada no existe.',
+    boundaryTitle: 'Esta vista falló', boundaryBody: 'El error fue registrado. Puede intentarlo de nuevo.',
+    tryAgain: 'Reintentar', offline: 'Sin conexión. Algunos datos pueden estar desactualizados.',
+  },
+};

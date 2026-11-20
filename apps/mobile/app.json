@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Enterprise ReactUI",
+    "slug": "enterprise-reactui",
+    "scheme": "erui",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.enterprise.reactui"
+    },
+    "android": {
+      "package": "com.enterprise.reactui",
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": ["expo-secure-store", "expo-localization"],
+    "extra": {
+      "dynatraceHint": "Add \"@dynatrace/react-native-plugin\" to plugins after configuring dynatrace.config.js, then run `expo prebuild`."
+    }
+  }
+}
