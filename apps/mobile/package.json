@@ -10,7 +10,8 @@
     "prebuild": "expo prebuild",
     "doctor": "npx expo-doctor",
     "align-deps": "npx expo install --fix",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "upgrade-sdk": "npx expo install expo@^58.0.0 --fix && npx expo-doctor@latest"
   },
   "dependencies": {
     "@dynatrace/react-native-plugin": "^2.0.0",

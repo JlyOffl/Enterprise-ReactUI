@@ -60,7 +60,7 @@ enterprise-reactui/
 
 ## Getting started
 
-Requires Node ≥ 20.19.
+Requires Node ≥ 22.13 (Expo SDK 58).
 
 ```bash
 npm install          # installs all workspaces
