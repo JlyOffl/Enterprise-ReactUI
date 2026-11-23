@@ -12,10 +12,12 @@
       "bundleIdentifier": "com.enterprise.reactui"
     },
     "android": {
-      "package": "com.enterprise.reactui",
-      "edgeToEdgeEnabled": true
+      "package": "com.enterprise.reactui"
     },
-    "plugins": ["expo-secure-store", "expo-localization"],
+    "plugins": [
+      "expo-secure-store",
+      "expo-localization"
+    ],
     "extra": {
       "dynatraceHint": "Add \"@dynatrace/react-native-plugin\" to plugins after configuring dynatrace.config.js, then run `expo prebuild`."
     }
