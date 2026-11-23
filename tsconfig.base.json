@@ -7,7 +7,6 @@
     "jsx": "react-jsx",
     "strict": true,
     "noUncheckedIndexedAccess": false,
-    "noImplicitOverride": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
