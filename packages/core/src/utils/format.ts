@@ -35,12 +35,23 @@ export function formatTime(value: string | number | Date, locale = 'en'): string
 export function formatRelativeTime(value: string | number | Date, locale = 'en'): string {
   const date = value instanceof Date ? value : new Date(value);
   const diffSec = Math.round((date.getTime() - Date.now()) / 1000);
-  const rtf = new Intl.RelativeTimeFormat(locale, { numeric: 'auto' });
   const abs = Math.abs(diffSec);
-  if (abs < 60) return rtf.format(diffSec, 'second');
-  if (abs < 3600) return rtf.format(Math.round(diffSec / 60), 'minute');
-  if (abs < 86400) return rtf.format(Math.round(diffSec / 3600), 'hour');
-  return rtf.format(Math.round(diffSec / 86400), 'day');
+  const [amount, unit]: [number, Intl.RelativeTimeFormatUnit] =
+    abs < 60
+      ? [diffSec, 'second']
+      : abs < 3600
+        ? [Math.round(diffSec / 60), 'minute']
+        : abs < 86400
+          ? [Math.round(diffSec / 3600), 'hour']
+          : [Math.round(diffSec / 86400), 'day'];
+  // Hermes (React Native) does not ship Intl.RelativeTimeFormat on iOS.
+  if (typeof Intl.RelativeTimeFormat === 'function') {
+    return new Intl.RelativeTimeFormat(locale, { numeric: 'auto' }).format(amount, unit);
+  }
+  if (amount === 0) return 'now';
+  const n = Math.abs(amount);
+  const label = `${n} ${unit}${n === 1 ? '' : 's'}`;
+  return amount < 0 ? `${label} ago` : `in ${label}`;
 }
 
 export function formatBytes(bytes: number): string {
